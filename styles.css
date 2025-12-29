@@ -1,45 +1,119 @@
-body,
-html {
-  background: #eeeef4;
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  cursor: default;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.construction-message {
-  position: absolute;
-  top: 25%;
-  width: 100%;
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
 }
 
-h1 {
-  color: #e43;
-  font-weight: 100;
-  font-size: 3em;
+header {
+  background: #020617;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-h2 {
-  color: #333333;
-  font-weight: 300;
-  font-size: 1.5em;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-a {
-  font-weight: 300;
-  color: #e43;
+nav h1 {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #94a3b8;
   text-decoration: none;
-  font-size: 1.5em;
 }
 
-span {
-  color: #e43;
+nav a:hover {
+  color: #38bdf8;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  margin-left: 10px;
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h3 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.card span {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  list-style: none;
+}
+
+.skills li {
+  background: #020617;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #64748b;
 }
