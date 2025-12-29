@@ -3,108 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Alessio Cuddretto | Software Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alessio Cuddretto | Ingegnere Informatico</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- LANGUAGE MODAL -->
+    <div id="languageModal" class="modal">
+        <div class="modal-content">
+            <h2>Choose language</h2>
+            <button onclick="setLanguage('it')">Italiano</button>
+            <button onclick="setLanguage('en')">English</button>
+        </div>
+    </div>
+
     <header>
-        <nav>
-            <h1>Alessio Cuddretto</h1>
-            <ul>
-                <li><a href="#about">Su di me</a></li>
-                <li><a href="#experience">Esperienze</a></li>
-                <li><a href="#skills">Competenze</a></li>
-                <li><a href="#education">Formazione</a></li>
-                <li><a href="#contact">Contatti</a></li>
-            </ul>
-        </nav>
+        <div class="top-bar">
+            <button id="themeToggle">🌙</button>
+        </div>
     </header>
 
-    <section class="hero">
-        <h2>Ingegnere Informatico</h2>
-        <p>Full Stack Developer · Software & Hardware · Data & AI</p>
+    <section class="hero animate">
+        <img src="img/profile.jpg" alt="Profile photo">
+        <h1 data-i18n="name">Alessio Cuddretto</h1>
+        <h2 data-i18n="role">Ingegnere Informatico</h2>
+        <p data-i18n="subtitle">Full Stack Developer · Software & Hardware</p>
     </section>
 
-    <section id="about" class="section">
-        <h3>Su di me</h3>
-        <p>
-            Ingegnere informatico con forte interesse per lo sviluppo hardware e software.
-            Approccio analitico orientato alla risoluzione di problemi complessi e
-            all’ottimizzazione delle soluzioni. Motivato a crescere in contesti IT innovativi.
-        </p>
+    <section class="section animate">
+        <h3 data-i18n="aboutTitle">Su di me</h3>
+        <p data-i18n="aboutText"></p>
     </section>
 
-    <section id="experience" class="section">
-        <h3>Esperienze lavorative</h3>
+    <section class="section animate">
+        <h3 data-i18n="experienceTitle">Esperienze</h3>
 
         <div class="card">
-            <h4>Studio tecnico di Architettura</h4>
-            <span>2022 - in corso</span>
-            <p>
-                Progettazione architettonica 2D/3D, render fotorealistici, computi metrici,
-                rilievi in loco e utilizzo di CAD, BIM, SketchUp e Twinmotion.
-            </p>
+            <h4 data-i18n="exp1Title"></h4>
+            <p data-i18n="exp1Text"></p>
         </div>
 
         <div class="card">
-            <h4>Full Stack Developer</h4>
-            <span>2017 - 2022</span>
-            <p>
-                Sviluppo web e web application, JavaScript e Python, backend e frontend.
-                Progetti gaming con Unity e C++, testing e ottimizzazione.
-            </p>
-        </div>
-
-        <div class="card">
-            <h4>Tecnico Informatico</h4>
-            <span>2017 - 2022</span>
-            <p>
-                Assemblaggio e riparazione PC, stampa 3D, Blender, Arduino,
-                programmazione C++ e Python.
-            </p>
+            <h4 data-i18n="exp2Title"></h4>
+            <p data-i18n="exp2Text"></p>
         </div>
     </section>
 
-    <section id="skills" class="section">
-        <h3>Competenze</h3>
+    <section class="section animate">
+        <h3 data-i18n="skillsTitle">Competenze</h3>
         <ul class="skills">
             <li>JavaScript</li>
             <li>Python</li>
             <li>C / C++</li>
-            <li>HTML & CSS</li>
-            <li>Full Stack Development</li>
+            <li>Full Stack</li>
             <li>Data Analysis</li>
-            <li>UI/UX Design</li>
             <li>CAD & BIM</li>
-            <li>3D Modeling & Rendering</li>
+            <li>3D Modeling</li>
         </ul>
     </section>
 
-    <section id="education" class="section">
-        <h3>Formazione</h3>
-
-        <div class="card">
-            <h4>Laurea Triennale in Ingegneria Informatica</h4>
-            <span>2022 - 2025</span>
-        </div>
-
-        <div class="card">
-            <h4>Diploma Tecnico Geometra</h4>
-            <span>2009 - 2014</span>
-        </div>
+    <section class="section animate">
+        <h3 data-i18n="projectsTitle">Progetti</h3>
+        <p data-i18n="projectsText"></p>
+        <a class="btn" href="https://github.com/cuddiale" target="_blank">
+            GitHub →
+        </a>
     </section>
 
-    <section id="contact" class="section contact">
-        <h3>Contatti</h3>
-        <p>Marsala (TP), Italia</p>
+    <section class="section animate contact">
+        <h3 data-i18n="contactTitle">Contatti</h3>
+        <p>Marsala (TP), Italy</p>
         <p>Email: <a href="mailto:Alessiocuddretto@hotmail.com">Alessiocuddretto@hotmail.com</a></p>
-        <p>Telefono: +39 351 549 0499</p>
 
         <div class="links">
             <a href="https://github.com/cuddiale" target="_blank">GitHub</a>
