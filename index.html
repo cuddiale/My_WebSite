@@ -3,90 +3,123 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Alessio Cuddretto | Software Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Alessio Cuddretto | Ingegnere Informatico</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- LANGUAGE MODAL -->
-    <div id="languageModal" class="modal">
-        <div class="modal-content">
-            <h2>Choose language</h2>
-            <button onclick="setLanguage('it')">Italiano</button>
-            <button onclick="setLanguage('en')">English</button>
-        </div>
-    </div>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Alessio Cuddretto" class="profile-img">
+            <h1>Alessio Cuddretto</h1>
+            <h2>Ingegnere Informatico</h2>
+            <p>Full Stack Developer · Software & Hardware · 3D & Design</p>
 
-    <header>
-        <div class="top-bar">
-            <button id="themeToggle">🌙</button>
+            <div class="links">
+                <a href="https://github.com/cuddiale" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/alessiocuddretto95/" target="_blank">LinkedIn</a>
+                <a href="https://cuddiale.github.io/My_WebSite/" target="_blank">Website</a>
+            </div>
         </div>
     </header>
 
-    <section class="hero animate">
-        <img src="img/profile.jpg" alt="Profile photo">
-        <h1 data-i18n="name">Alessio Cuddretto</h1>
-        <h2 data-i18n="role">Ingegnere Informatico</h2>
-        <p data-i18n="subtitle">Full Stack Developer · Software & Hardware</p>
+    <section id="about">
+        <h2>Su di me</h2>
+        <p>
+            Ingegnere informatico con forte interesse per lo sviluppo hardware e software.
+            Approccio analitico orientato alla risoluzione di problemi complessi e
+            all’ottimizzazione delle soluzioni.
+        </p>
+        <p>
+            Ho maturato esperienza nello sviluppo web, software e progettazione tecnica,
+            con l’obiettivo di entrare a far parte di realtà IT innovative e dinamiche.
+        </p>
     </section>
 
-    <section class="section animate">
-        <h3 data-i18n="aboutTitle">Su di me</h3>
-        <p data-i18n="aboutText"></p>
-    </section>
-
-    <section class="section animate">
-        <h3 data-i18n="experienceTitle">Esperienze</h3>
+    <section id="experience">
+        <h2>Esperienze lavorative</h2>
 
         <div class="card">
-            <h4 data-i18n="exp1Title"></h4>
-            <p data-i18n="exp1Text"></p>
+            <h3>Studio Tecnico di Architettura</h3>
+            <span>2022 - Presente</span>
+            <p>
+                Progettazione 2D/3D, render fotorealistici, computi metrici,
+                rilievi, contabilità lavori e pratiche edilizie.
+                Utilizzo di CAD, BIM, SketchUp e Twinmotion.
+            </p>
         </div>
 
         <div class="card">
-            <h4 data-i18n="exp2Title"></h4>
-            <p data-i18n="exp2Text"></p>
+            <h3>Full Stack Developer</h3>
+            <span>2017 - 2022</span>
+            <p>
+                Sviluppo di siti web e web application front-end e back-end
+                con JavaScript e Python. Progetti gaming con Unity e C++.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tecnico Informatico</h3>
+            <span>2017 - 2022</span>
+            <p>
+                Assemblaggio e riparazione PC, modellazione e stampa 3D,
+                prototipazione elettronica con Arduino, C++ e Python.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Ristorazione – Regno Unito</h3>
+            <span>2014 - 2017</span>
+            <p>
+                Crescita professionale da lavapiatti a direttore di sala.
+                Sviluppo di competenze comunicative, gestionali e leadership.
+            </p>
         </div>
     </section>
 
-    <section class="section animate">
-        <h3 data-i18n="skillsTitle">Competenze</h3>
-        <ul class="skills">
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C / C++</li>
-            <li>Full Stack</li>
-            <li>Data Analysis</li>
-            <li>CAD & BIM</li>
-            <li>3D Modeling</li>
-        </ul>
-    </section>
+    <section id="skills">
+        <h2>Competenze</h2>
 
-    <section class="section animate">
-        <h3 data-i18n="projectsTitle">Progetti</h3>
-        <p data-i18n="projectsText"></p>
-        <a class="btn" href="https://github.com/cuddiale" target="_blank">
-            GitHub →
-        </a>
-    </section>
+        <div class="skills-grid">
+            <div>
+                <h4>Software & Programmazione</h4>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C / C++</li>
+                    <li>Unity</li>
+                    <li>Arduino</li>
+                </ul>
+            </div>
 
-    <section class="section animate contact">
-        <h3 data-i18n="contactTitle">Contatti</h3>
-        <p>Marsala (TP), Italy</p>
-        <p>Email: <a href="mailto:Alessiocuddretto@hotmail.com">Alessiocuddretto@hotmail.com</a></p>
+            <div>
+                <h4>Web & UI</h4>
+                <ul>
+                    <li>HTML / CSS</li>
+                    <li>Full Stack Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
 
-        <div class="links">
-            <a href="https://github.com/cuddiale" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/alessiocuddretto95/" target="_blank">LinkedIn</a>
+            <div>
+                <h4>3D & Design</h4>
+                <ul>
+                    <li>CAD</li>
+                    <li>SketchUp</li>
+                    <li>Twinmotion</li>
+                    <li>Blender</li>
+                    <li>Stampa 3D</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Alessio Cuddretto</p>
+        <p>© 2026 - Alessio Cuddretto</p>
+        <p>Marsala (TP), Italia · alessiocuddretto@hotmail.com · +39 351 5490499</p>
     </footer>
 
     <script src="script.js"></script>
