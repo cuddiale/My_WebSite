@@ -6,124 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alessio Cuddretto | Ingegnere Informatico</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="top">
+<body>
 
-    <!-- HEADER / HERO -->
-    <header class="hero">
-        <div class="hero-left">
-            <a href="#top" class="logo">
-                Alessio Cuddretto
-            </a>
+    <!-- NAVBAR SEMPRE VISIBILE -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Alessio Cuddretto</a>
 
-            <!-- Foto (la inseriremo dopo) -->
-            <div class="hero-photo">
-                <!-- <img src="img/profile.jpg" alt="Foto Alessio Cuddretto"> -->
-            </div>
-        </div>
-
-        <div class="hero-right">
-            <h1>Ingegnere Informatico</h1>
-            <p>
-                Sviluppo software, web, hardware e soluzioni orientate
-                all’innovazione tecnologica.
-            </p>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#experience">Esperienze</a>
+                <a href="#education">Istruzione</a>
+                <a href="#skills">Competenze</a>
+                <a href="#contact" class="nav-cta">Contatti</a>
+            </nav>
         </div>
     </header>
 
-    <!-- NAVBAR (sticky, nascosta inizialmente) -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Progetti</a></li>
-            <li><a href="#contacts">Contatti</a></li>
-        </ul>
-    </nav>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Ingegnere Informatico</h1>
 
-    <!-- ABOUT ME -->
+            <p>
+                Sviluppatore software e web con forte interesse per hardware,
+                progettazione tecnica e soluzioni innovative orientate alle performance.
+            </p>
+
+            <a href="#contact" class="btn-primary">Contattami</a>
+        </div>
+
+        <div class="hero-image">
+            <!-- Foto in seguito -->
+        </div>
+    </section>
+
+    <!-- ABOUT -->
     <section id="about" class="section about">
-        <h2>About me</h2>
+        <h2>Chi sono</h2>
 
         <p>
-            Ingegnere informatico con forte interesse per lo sviluppo hardware e software.
-            Approccio analitico orientato alla risoluzione di problemi complessi e
-            all’ottimizzazione delle soluzioni.
-        </p>
-
-        <p>
-            Ho maturato esperienza nello sviluppo web, software e in ambito tecnico,
-            con l’obiettivo di entrare a far parte di un’azienda innovativa nel settore IT.
+            Ingegnere informatico con approccio analitico e orientato alla risoluzione
+            di problemi complessi. Ho maturato esperienze trasversali nello sviluppo
+            software, web, progettazione tecnica e modellazione 3D.
         </p>
     </section>
 
-    <!-- PROGETTI / HARD SKILLS -->
-    <section id="projects" class="section projects">
-        <h2>Hard Skills</h2>
+    <!-- ESPERIENZE -->
+    <section id="experience" class="section experience">
+        <h2>Esperienze lavorative</h2>
 
-        <!-- Categoria -->
-        <div class="skills-category">
+        <article class="experience-item">
+            <h3>Studio tecnico di Architettura</h3>
+            <span>2022 – in corso</span>
+            <p>
+                Progettazione 2D/3D, render fotorealistici, computi metrici,
+                rilievi e supporto alle pratiche edilizie.
+            </p>
+        </article>
+
+        <article class="experience-item">
+            <h3>Full Stack Developer</h3>
+            <span>2017 – 2022</span>
+            <p>
+                Sviluppo di siti web e web application, gestione front-end e back-end,
+                progetti in ambito gaming e software.
+            </p>
+        </article>
+    </section>
+
+    <!-- ISTRUZIONE -->
+    <section id="education" class="section education">
+        <h2>Istruzione</h2>
+
+        <ul>
+            <li>
+                <strong>Laurea Triennale in Ingegneria Informatica</strong><br>
+                2022 – 2025
+            </li>
+            <li>
+                <strong>Diploma Tecnico Geometra</strong><br>
+                2009 – 2014
+            </li>
+        </ul>
+    </section>
+
+    <!-- HARD SKILLS -->
+    <section id="skills" class="section skills">
+        <h2>Competenze tecniche</h2>
+
+        <!-- CATEGORIA -->
+        <div class="skill-category">
             <h3>Software & Programmazione</h3>
+            <p>
+                Sviluppo di applicazioni web e software, gestione della logica applicativa,
+                testing e ottimizzazione delle prestazioni.
+            </p>
 
             <div class="skills-slider">
                 <div class="skills-track">
-                    <!-- Loghi (placeholder) -->
-                    <div class="skill-item">HTML</div>
-                    <div class="skill-item">CSS</div>
-                    <div class="skill-item">JavaScript</div>
-                    <div class="skill-item">Python</div>
-                    <div class="skill-item">C++</div>
-                    <div class="skill-item">Unity</div>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>C++</span>
+                    <span>Unity</span>
                 </div>
             </div>
         </div>
 
-        <div class="skills-category">
+        <div class="skill-category">
             <h3>CAD, Render & Design</h3>
+            <p>
+                Modellazione architettonica, visualizzazione 3D e progettazione tecnica
+                orientata al dettaglio e alla resa fotorealistica.
+            </p>
 
             <div class="skills-slider">
                 <div class="skills-track">
-                    <div class="skill-item">AutoCAD</div>
-                    <div class="skill-item">SketchUp</div>
-                    <div class="skill-item">Twinmotion</div>
-                    <div class="skill-item">Blender</div>
+                    <span>AutoCAD</span>
+                    <span>SketchUp</span>
+                    <span>Twinmotion</span>
+                    <span>Blender</span>
+                    <span>GIMP</span>
                 </div>
             </div>
         </div>
 
-        <div class="skills-category">
-            <h3>Modellazione 3D, Gaming & Robotica</h3>
+        <div class="skill-category">
+            <h3>Hardware, Robotica & 3D</h3>
+            <p>
+                Progettazione e realizzazione di prototipi hardware, stampa 3D
+                e sviluppo di sistemi basati su microcontrollori.
+            </p>
 
             <div class="skills-slider">
                 <div class="skills-track">
-                    <div class="skill-item">3D Printing</div>
-                    <div class="skill-item">Arduino</div>
-                    <div class="skill-item">Robotics</div>
-                    <div class="skill-item">Game Dev</div>
+                    <span>Arduino</span>
+                    <span>3D Printing</span>
+                    <span>Electronics</span>
+                    <span>Robotics</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTATTI -->
-    <section id="contacts" class="section contacts">
-        <h2>Contatti</h2>
+    <section id="contact" class="section contact">
+        <h2>Contattami</h2>
 
-        <ul>
-            <li>Email: <a href="mailto:alessiocuddretto@hotmail.com">alessiocuddretto@hotmail.com</a></li>
-            <li>GitHub: <a href="https://github.com/cuddiale" target="_blank">github.com/cuddiale</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/alessiocuddretto95/" target="_blank">LinkedIn</a></li>
-        </ul>
+        <form class="contact-form">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Messaggio" required></textarea>
+            <button type="submit">Invia messaggio</button>
+        </form>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <p>© 2026 Alessio Cuddretto</p>
     </footer>
 
-    <!-- JS -->
     <script src="script.js"></script>
 </body>
 
