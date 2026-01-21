@@ -1,21 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Alessio Cuddretto | Ingegnere Informatico</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
+    <!-- HEADER / HERO -->
+    <header class="hero">
+        <div class="hero-left">
+            <a href="#top" class="logo">
+                Alessio Cuddretto
+            </a>
+
+            <!-- Foto (la inseriremo dopo) -->
+            <div class="hero-photo">
+                <!-- <img src="img/profile.jpg" alt="Foto Alessio Cuddretto"> -->
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <h1>Ingegnere Informatico</h1>
+            <p>
+                Sviluppo software, web, hardware e soluzioni orientate
+                all’innovazione tecnologica.
+            </p>
+        </div>
+    </header>
+
+    <!-- NAVBAR (sticky, nascosta inizialmente) -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Progetti</a></li>
+            <li><a href="#contacts">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="section about">
+        <h2>About me</h2>
+
+        <p>
+            Ingegnere informatico con forte interesse per lo sviluppo hardware e software.
+            Approccio analitico orientato alla risoluzione di problemi complessi e
+            all’ottimizzazione delle soluzioni.
+        </p>
+
+        <p>
+            Ho maturato esperienza nello sviluppo web, software e in ambito tecnico,
+            con l’obiettivo di entrare a far parte di un’azienda innovativa nel settore IT.
+        </p>
+    </section>
+
+    <!-- PROGETTI / HARD SKILLS -->
+    <section id="projects" class="section projects">
+        <h2>Hard Skills</h2>
+
+        <!-- Categoria -->
+        <div class="skills-category">
+            <h3>Software & Programmazione</h3>
+
+            <div class="skills-slider">
+                <div class="skills-track">
+                    <!-- Loghi (placeholder) -->
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">Unity</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3>CAD, Render & Design</h3>
+
+            <div class="skills-slider">
+                <div class="skills-track">
+                    <div class="skill-item">AutoCAD</div>
+                    <div class="skill-item">SketchUp</div>
+                    <div class="skill-item">Twinmotion</div>
+                    <div class="skill-item">Blender</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3>Modellazione 3D, Gaming & Robotica</h3>
+
+            <div class="skills-slider">
+                <div class="skills-track">
+                    <div class="skill-item">3D Printing</div>
+                    <div class="skill-item">Arduino</div>
+                    <div class="skill-item">Robotics</div>
+                    <div class="skill-item">Game Dev</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section id="contacts" class="section contacts">
+        <h2>Contatti</h2>
+
+        <ul>
+            <li>Email: <a href="mailto:alessiocuddretto@hotmail.com">alessiocuddretto@hotmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/cuddiale" target="_blank">github.com/cuddiale</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/alessiocuddretto95/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Alessio Cuddretto</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-<script>
-
-    // usare funzione fetch per coppiare il footer e altri elementi / vedere bard come soluzione
-    // vale anche per i file html, questo file è home, creare sezione: chi sono, contatti , progetti
-
-</script>
