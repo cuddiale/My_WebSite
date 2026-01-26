@@ -287,3 +287,41 @@ body {
   font-weight: 500;
   color: #000;
 }
+
+/* ROTAZIONE TESTO */
+#rotating-text {
+  display: inline-block;
+  transition: opacity 0.5s ease;
+}
+
+/* SKILLS più lente */
+.skills-track {
+  animation: scroll-left 40s linear infinite;
+}
+
+/* CONTATTI EVIDENZIATI */
+.contact-highlight {
+  padding: 6rem 2rem;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.contact-highlight h2 {
+  margin-bottom: 2rem;
+}
+
+.contact-highlight .contact-form {
+  margin: 0 auto 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
