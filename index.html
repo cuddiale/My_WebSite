@@ -1,199 +1,24 @@
-<!DOCTYPE html>
-<html lang="it">
+<section id="contact" class="contact-section">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Alessio Cuddretto</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <h2>Contattami</h2>
 
-<body>
+    <p class="contact-intro">
+        Se vuoi collaborare con me o semplicemente metterti in contatto,
+        puoi scrivermi tramite il form o utilizzare uno dei link qui sotto.
+    </p>
 
-    <!-- NAVBAR -->
-    <header class="main-header">
-        <div class="nav-container">
-            <a href="#hero" class="logo">Alessio Cuddretto</a>
-            <nav class="nav">
-                <a href="#about" class="nav-link">Chi sono</a>
-                <a href="#skills" class="nav-link">Competenze</a>
-                <a href="#contact" class="nav-button">Contatti</a>
-            </nav>
-        </div>
-    </header>
+    <form class="contact-form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Messaggio" required></textarea>
+        <button type="submit">Invia messaggio</button>
+    </form>
 
-    <!-- HERO -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>
-                Alessio Cuddretto<br>
-                <span id="rotating-text">Ingegnere Informatico</span>
-            </h1>
+    <div class="contact-links">
+        <a href="mailto:alessiocuddretto@hotmail.com">Email</a>
+        <a href="https://github.com/cuddiale" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/alessiocuddretto95" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
 
-            <p>
-                Appassionato di sviluppo software, progettazione web e
-                soluzioni digitali orientate all’utente.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#contact" class="btn-primary">Contatti</a>
-                <a href="#about" class="btn-secondary">Chi sono</a>
-            </div>
-        </div>
-
-        <div class="hero-image">
-            <!-- immagine futura -->
-        </div>
-    </section>
-
-    <!-- CHI SONO + ESPERIENZE -->
-    <section id="about" class="section">
-        <div class="section-grid">
-            <div>
-                <h2>Chi sono</h2>
-                <p>
-                    Testo descrittivo da definire.
-                    Qui racconterai il tuo percorso, il tuo approccio e
-                    cosa ti distingue come professionista.
-                </p>
-            </div>
-
-            <div>
-                <h2>Esperienze lavorative</h2>
-
-                <div class="experience-item">
-                    <span>2024 – 2025</span>
-                    <strong>Tecnico Informatico</strong>
-                    <p>Assistenza hardware/software e supporto IT.</p>
-                </div>
-
-                <div class="experience-item">
-                    <span>2023</span>
-                    <strong>Ristorazione – Regno Unito</strong>
-                    <p>Esperienza lavorativa in contesto internazionale.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ISTRUZIONE + COMPETENZE -->
-    <section class="section">
-        <div class="section-grid">
-
-            <div id="education">
-                <h2>Istruzione</h2>
-
-                <div class="education-item">
-                    <strong>Ingegneria Informatica</strong>
-                    <p class="education-skills">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Python</span>
-                        <span>SQL</span>
-                        <span>Git</span>
-                        <span>UX/UI</span>
-                    </p>
-                </div>
-            </div>
-
-            <div id="skills">
-                <h2>Competenze tecniche</h2>
-
-                <div class="skill-category">
-                    <p>Sviluppo Web</p>
-                    <div class="skills-slider">
-                        <div class="skills-track">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Python</span>
-                            <span>SQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <p>Software</p>
-                    <div class="skills-slider">
-                        <div class="skills-track">
-                            <span>AutoCAD</span>
-                            <span>SketchUp</span>
-                            <span>GIMP</span>
-                            <span>Word</span>
-                            <span>Excel</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- LINGUE + ALTRE COMPETENZE -->
-    <section class="section">
-        <div class="section-grid">
-
-            <div>
-                <h2>Lingue</h2>
-
-                <div class="language-item">
-                    <span>Italiano</span>
-                    <div class="language-bar">
-                        <div class="level" style="width:100%"></div>
-                    </div>
-                </div>
-
-                <div class="language-item">
-                    <span>Inglese</span>
-                    <div class="language-bar">
-                        <div class="level" style="width:75%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h2>Ulteriori competenze</h2>
-                <ul>
-                    <li>Problem solving</li>
-                    <li>Lavoro in team</li>
-                    <li>Gestione del tempo</li>
-                    <li>Esperienza internazionale</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTATTI -->
-    <section id="contact" class="contact-section">
-        <h2>Contattami</h2>
-
-        <p class="contact-intro">
-            Per collaborazioni o informazioni puoi scrivermi tramite il form
-            o utilizzare uno dei link qui sotto.
-        </p>
-
-        <form class="contact-form">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Messaggio" required></textarea>
-            <button type="submit">Invia messaggio</button>
-        </form>
-
-        <div class="contact-links">
-            <a href="mailto:alessiocuddretto@hotmail.com">Email</a>
-            <a href="https://github.com/cuddiale" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/alessiocuddretto95" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
-    </section>
-
-    <footer class="footer">
-        © 2026 Alessio Cuddretto — Built with HTML, CSS & JS
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+</section>
