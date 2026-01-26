@@ -1,45 +1,27 @@
-/* =========================
-   CONTATTI – SEZIONE CENTRALE
-========================= */
-.contact-section {
+/* ROTAZIONE TESTO */
+#rotating-text {
+  display: inline-block;
+  transition: opacity 0.5s ease;
+}
+
+/* SKILLS più lente */
+.skills-track {
+  animation: scroll-left 40s linear infinite;
+}
+
+/* CONTATTI EVIDENZIATI */
+.contact-highlight {
   padding: 6rem 2rem;
-  background: #f4f4f4;
+  background: #f5f5f5;
   text-align: center;
 }
 
-.contact-section h2 {
-  margin-bottom: 1.5rem;
+.contact-highlight h2 {
+  margin-bottom: 2rem;
 }
 
-.contact-intro {
-  max-width: 500px;
-  margin: 0 auto 2.5rem;
-  color: #555;
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.9rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-family: inherit;
-}
-
-.contact-form button {
-  padding: 0.9rem;
-  border-radius: 30px;
-  background: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.contact-highlight .contact-form {
+  margin: 0 auto 2rem;
 }
 
 .contact-links {
@@ -50,6 +32,6 @@
 
 .contact-links a {
   text-decoration: none;
-  font-weight: 500;
   color: #000;
+  font-weight: 500;
 }
