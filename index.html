@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alessio Cuddretto | Ingegnere Informatico</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,11 +14,10 @@
     <header class="main-header">
         <div class="nav-container">
             <a href="#hero" class="logo">Alessio Cuddretto</a>
-
             <nav class="nav">
                 <a href="#about" class="nav-link">Chi sono</a>
                 <a href="#skills" class="nav-link">Competenze</a>
-                <a href="#contact" class="nav-button">Contatti</a>
+                <a href="#contact" class="nav-link">Contatti</a>
             </nav>
         </div>
     </header>
@@ -32,21 +30,23 @@
             </h1>
 
             <p>
-                Sviluppo soluzioni software, web e digitali con approccio
-                analitico e orientato alla qualità.
+                Sviluppo soluzioni software, web e digitali con approccio analitico
+                e orientato alla qualità.
             </p>
-            <a href="#contact" class="btn-primary">Contattami</a>
+
+            <div class="hero-actions">
+                <a href="#about" class="btn-secondary">Chi sono</a>
+                <a href="#contact" class="btn-primary">Contattami</a>
+            </div>
         </div>
 
-        <div class="hero-image">
-            <!-- Foto in seguito -->
-        </div>
+        <div class="hero-image"></div>
     </section>
 
     <!-- CHI SONO + ESPERIENZE -->
-    <section class="section section-grid">
+    <section class="section section-grid" id="about">
 
-        <div id="about">
+        <div>
             <h2>Chi sono</h2>
             <p>
                 Ingegnere informatico con approccio analitico e orientato alla
@@ -55,25 +55,31 @@
             </p>
         </div>
 
-        <div id="experience">
+        <div>
             <h2>Esperienze lavorative</h2>
+
+            <article class="experience-item">
+                <h3>Tecnico Informatico</h3>
+                <span>2024 – 2025</span>
+                <p>Assistenza hardware e software, supporto IT e manutenzione sistemi.</p>
+            </article>
 
             <article class="experience-item">
                 <h3>Studio tecnico di Architettura</h3>
                 <span>2022 – in corso</span>
-                <p>
-                    Progettazione architettonica 2D/3D, render fotorealistici,
-                    computi metrici e supporto tecnico.
-                </p>
+                <p>Progettazione 2D/3D, render, computi metrici e supporto tecnico.</p>
             </article>
 
             <article class="experience-item">
                 <h3>Full Stack Developer</h3>
                 <span>2017 – 2022</span>
-                <p>
-                    Sviluppo di siti web e web application, gestione front-end
-                    e back-end.
-                </p>
+                <p>Sviluppo siti web e web application front-end e back-end.</p>
+            </article>
+
+            <article class="experience-item">
+                <h3>Ristorazione – Regno Unito</h3>
+                <span>2016 – 2017</span>
+                <p>Esperienza lavorativa in contesto internazionale e multiculturale.</p>
             </article>
         </div>
 
@@ -84,118 +90,52 @@
 
         <div id="education">
             <h2>Istruzione</h2>
-            <ul>
-                <li>
-                    <strong>Laurea Triennale in Ingegneria Informatica</strong><br>
-                    2022 – 2025
-                </li>
-                <li>
-                    <strong>Diploma Tecnico Geometra</strong><br>
-                    2009 – 2014
-                </li>
-            </ul>
+
+            <article class="education-item">
+                <strong>Laurea Triennale in Ingegneria Informatica</strong>
+                <p class="education-skills">
+                    <span>Programmazione</span>
+                    <span>Algoritmi</span>
+                    <span>Basi di dati</span>
+                    <span>Reti</span>
+                    <span>Sistemi</span>
+                </p>
+            </article>
+
+            <article class="education-item">
+                <strong>Studio autonomo e formazione continua</strong>
+                <p class="education-skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>UX/UI</span>
+                    <span>Git</span>
+                </p>
+            </article>
         </div>
 
         <div id="skills">
             <h2>Competenze tecniche</h2>
 
-            <div class="skill-category">
-                <h3>Software & Programmazione</h3>
-                <p>
-                    Sviluppo software e web, gestione logica applicativa,
-                    testing e ottimizzazione.
-                </p>
-
-                <div class="skills-slider">
-                    <div class="skills-track">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Python</span>
-                        <span>C++</span>
-                        <span>Unity</span>
-                    </div>
+            <div class="skills-slider">
+                <div class="skills-track">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>C++</span>
+                    <span>AutoCAD</span>
+                    <span>SketchUp</span>
+                    <span>Blender</span>
+                    <span>GIMP</span>
                 </div>
             </div>
-
-            <div class="skill-category">
-                <h3>CAD & Design</h3>
-                <p>
-                    Modellazione tecnica 2D/3D, visualizzazione e rendering.
-                </p>
-
-                <div class="skills-slider">
-                    <div class="skills-track">
-                        <span>AutoCAD</span>
-                        <span>SketchUp</span>
-                        <span>Twinmotion</span>
-                        <span>Blender</span>
-                        <span>GIMP</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
     </section>
 
-    <!-- LINGUE + ULTERIORI INFO -->
-    <section class="section section-grid">
-
-        <div id="languages">
-            <h2>Lingue</h2>
-
-            <div class="language-item">
-                <span>Italiano</span>
-                <div class="language-bar">
-                    <div class="level" style="width: 100%;"></div>
-                </div>
-            </div>
-
-            <div class="language-item">
-                <span>Inglese</span>
-                <div class="language-bar">
-                    <div class="level" style="width: 85%;"></div>
-                </div>
-            </div>
-
-            <div class="language-item">
-                <span>Spagnolo</span>
-                <div class="language-bar">
-                    <div class="level" style="width: 40%;"></div>
-                </div>
-            </div>
-
-            <div class="language-item">
-                <span>Tedesco</span>
-                <div class="language-bar">
-                    <div class="level" style="width: 25%;"></div>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="info">
-            <h2>Ulteriori informazioni</h2>
-
-            <p>
-                In possesso della patente di guida B, AM e A.
-            </p>
-
-            <p>
-                Forte interesse per la modellazione e stampa 3D, viaggi,
-                lettura e scacchi, attività che contribuiscono allo sviluppo
-                del pensiero analitico e della pianificazione strategica.
-            </p>
-
-            <p>
-                Costante aggiornamento sulle innovazioni tecnologiche
-                e sugli strumenti digitali.
-            </p>
-        </div>
-
-    </section>
-
+    <!-- CONTATTI -->
     <section id="contact" class="contact-section">
 
         <h2>Contattami</h2>
@@ -221,11 +161,11 @@
 
     </section>
 
-
     <footer class="footer">
         © 2026 Alessio Cuddretto — Tutti i diritti riservati
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

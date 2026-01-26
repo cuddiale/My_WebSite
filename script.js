@@ -9,7 +9,6 @@ const textElement = document.getElementById("rotating-text");
 
 setInterval(() => {
   textElement.style.opacity = 0;
-
   setTimeout(() => {
     index = (index + 1) % titles.length;
     textElement.textContent = titles[index];
