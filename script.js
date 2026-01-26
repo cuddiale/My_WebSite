@@ -13,5 +13,5 @@ setInterval(() => {
     index = (index + 1) % titles.length;
     textElement.textContent = titles[index];
     textElement.style.opacity = 1;
-  }, 500);
-}, 3000);
+  }, 600);
+}, 4500);
