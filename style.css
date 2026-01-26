@@ -156,16 +156,19 @@ body {
   margin-bottom: 3rem;
 }
 
+/* Contenitore limitato alla metà della pagina */
 .skills-slider {
   overflow: hidden;
+  width: 35rem; /* metà pagina */
   padding: 1rem 0;
+  box-sizing: border-box; /* evita overflow dovuto a padding */
 }
 
 .skills-track {
   display: flex;
   gap: 2.5rem;
-  width: max-content;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 30s linear infinite;
+  /* Rimuoviamo width:max-content per far sì che il contenitore limiti il layout */
 }
 
 .skills-track span {
@@ -176,6 +179,7 @@ body {
   white-space: nowrap;
 }
 
+/* Keyframes: scorre da destra a sinistra */
 @keyframes scroll-left {
   from {
     transform: translateX(100%);
@@ -327,7 +331,11 @@ body {
 
 /* SKILLS più lente */
 .skills-track {
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 30s linear infinite;
+}
+
+.skills-track2 {
+  animation: scroll-left 15s linear infinite;
 }
 
 /* FORM */
