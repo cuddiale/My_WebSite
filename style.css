@@ -54,6 +54,8 @@ body {
   border: 1px solid #000;
   padding: 0.4rem 0.9rem;
   border-radius: 20px;
+  text-decoration: none;
+  color: #000;
 }
 
 /* HERO */
@@ -100,9 +102,9 @@ body {
 
 /* SEZIONI */
 .section {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 6rem 2rem;
+  padding: 5rem 2rem;
 }
 
 .section h2 {
@@ -199,47 +201,106 @@ body {
   background: #000;
 }
 
-/* CONTATTI – GRID */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
+/* CONTATTI*/
+.contact {
+  background: linear-gradient(135deg, #f4f4f4, #eaeaea);
+  text-align: center;
 }
 
-@media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
-/* INFO CONTATTI */
-.contact-info p {
-  margin-bottom: 2rem;
+.contact-intro {
+  max-width: 600px;
+  margin: 0 auto 3rem;
   color: #555;
-  max-width: 400px;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
-.contact-links {
-  list-style: none;
-}
-
-.contact-links li {
-  margin-bottom: 1.2rem;
+/* FORM */
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
+  gap: 1.2rem;
 }
 
-.contact-links span {
-  font-size: 0.8rem;
-  color: #888;
-  margin-bottom: 0.2rem;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border-radius: 30px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* LINK */
+.contact-links {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
 }
 
 .contact-links a {
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  border: 1px solid #000;
   text-decoration: none;
-  color: #1a1a1a;
-  font-size: 0.95rem;
+  color: #000;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.contact-links a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* FULL WIDTH BACKGROUND */
+.contact-wrapper {
+  width: 100%;
+  background: linear-gradient(135deg, #f4f4f4, #eaeaea);
+}
+
+/* CONTENUTO CENTRATO */
+.contact-wrapper .contact {
+  max-width: 1100px;
+  margin: auto;
+  padding: 6rem 2rem;
+  text-align: center;
 }
 
 /* FOOTER */
@@ -262,29 +323,71 @@ body {
   animation: scroll-left 40s linear infinite;
 }
 
-/* CONTATTI EVIDENZIATI */
-.contact-highlight {
-  padding: 6rem 2rem;
-  background: #f5f5f5;
-  text-align: center;
+/* FORM */
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-.contact-highlight h2 {
-  margin-bottom: 2rem;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  font-family: inherit;
 }
 
-.contact-highlight .contact-form {
-  margin: 0 auto 2rem;
+.contact-form textarea {
+  min-height: 200px;
+  resize: vertical;
 }
 
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border-radius: 30px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* LINK */
 .contact-links {
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
 }
 
 .contact-links a {
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  border: 1px solid #000;
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.contact-links a:hover {
+  background: #000;
+  color: #fff;
 }

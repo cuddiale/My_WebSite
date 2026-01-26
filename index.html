@@ -18,10 +18,7 @@
 
             <nav class="nav">
                 <a href="#about">Chi sono</a>
-                <a href="#experience">Esperienze</a>
-                <a href="#education">Istruzione</a>
                 <a href="#skills">Competenze</a>
-                <a href="#languages">Lingue</a>
                 <a href="#contact" class="nav-cta">Contatti</a>
             </nav>
         </div>
@@ -30,26 +27,29 @@
     <!-- HERO -->
     <section id="hero" class="hero">
         <div class="hero-content">
+
             <h1>
                 <span id="rotating-text">Ingegnere Informatico</span>
             </h1>
 
             <p>
-                Sviluppo soluzioni software, web e digitali con approccio
-                analitico e orientato alla qualità.
+                Sviluppatore software e web con interesse per hardware,
+                progettazione tecnica e soluzioni tecnologiche innovative.
             </p>
-
+            <a href="#about" class="nav-cta"> Chi sono </a>
             <a href="#contact" class="btn-primary">Contattami</a>
         </div>
 
-        <div class="hero-image"></div>
+        <div class="hero-image">
+            <!-- Foto in seguito -->
+        </div>
     </section>
-
 
     <!-- CHI SONO + ESPERIENZE -->
     <section class="section section-grid">
 
         <div id="about">
+
             <h2>Chi sono</h2>
             <p>
                 Ingegnere informatico con approccio analitico e orientato alla
@@ -200,14 +200,18 @@
     </section>
 
     <!-- CONTATTI -->
-    <!-- CONTATTI -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="contact-wrapper">
 
-        <h2>Contattami</h2>
+        <div class="contact section">
 
-        <div class="contact-grid">
+            <h2>Contattami</h2>
 
-            <!-- FORM -->
+            <p class="contact-intro">
+                Se vuoi metterti in contatto con me per collaborazioni,
+                opportunità professionali o semplicemente per un confronto,
+                puoi scrivermi tramite il form o utilizzare uno dei canali sotto.
+            </p>
+
             <form class="contact-form">
                 <input type="text" placeholder="Nome" required>
                 <input type="email" placeholder="Email" required>
@@ -215,54 +219,31 @@
                 <button type="submit">Invia messaggio</button>
             </form>
 
-            <!-- INFO & LINK -->
-            <div class="contact-info">
-                <p>
-                    Se vuoi metterti in contatto con me per collaborazioni,
-                    opportunità professionali o semplicemente per un confronto,
-                    puoi scrivermi tramite il form o utilizzare uno dei canali sotto.
-                </p>
-
-                <ul class="contact-links">
-                    <li>
-                        <span>Email</span>
-                        <a href="mailto:alessiocuddretto@hotmail.com">
-                            alessiocuddretto@hotmail.com
-                        </a>
-                    </li>
-
-                    <li>
-                        <span>GitHub</span>
-                        <a href="https://github.com/cuddiale" target="_blank">
-                            github.com/cuddiale
-                        </a>
-                    </li>
-
-                    <li>
-                        <span>LinkedIn</span>
-                        <a href="https://www.linkedin.com/in/alessiocuddretto95/" target="_blank">
-                            linkedin.com/in/alessiocuddretto95
-                        </a>
-                    </li>
-
-                    <li>
-                        <span>Instagram</span>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            instagram.com
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="contact-links">
+                <li>
+                    <a href="mailto:alessiocuddretto@hotmail.com">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/cuddiale" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/alessiocuddretto95/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+            </ul>
 
         </div>
 
     </section>
-
 
     <footer class="footer">
         <p>© 2026 Alessio Cuddretto</p>
     </footer>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
