@@ -1,24 +1,147 @@
-<section id="contact" class="contact-section">
+<!DOCTYPE html>
+<html lang="it">
 
-    <h2>Contattami</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessio Cuddretto | Ingegnere Informatico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <p class="contact-intro">
-        Se vuoi collaborare con me o semplicemente metterti in contatto,
-        puoi scrivermi tramite il form o utilizzare uno dei link qui sotto.
-    </p>
+<body>
 
-    <form class="contact-form">
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Messaggio" required></textarea>
-        <button type="submit">Invia messaggio</button>
-    </form>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Alessio Cuddretto</a>
 
-    <div class="contact-links">
-        <a href="mailto:alessiocuddretto@hotmail.com">Email</a>
-        <a href="https://github.com/cuddiale" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/alessiocuddretto95" target="_blank">LinkedIn</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-    </div>
+            <nav class="nav">
+                <a href="#about">Chi sono</a>
+                <a href="#skills">Competenze</a>
+                <a href="#contact" class="nav-cta">Contatti</a>
+            </nav>
+        </div>
+    </header>
 
-</section>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>
+                <span id="rotating-text">Ingegnere Informatico</span>
+            </h1>
+
+            <p>
+                Sviluppo soluzioni software, web e digitali con approccio
+                analitico e orientato alla qualità.
+            </p>
+
+            <a href="#contact" class="btn-primary">Contattami</a>
+        </div>
+
+        <div class="hero-image"></div>
+    </section>
+
+    <section class="section section-grid">
+
+        <div id="about">
+            <h2>Chi sono</h2>
+            <p>
+                Ingegnere informatico con forte interesse per sviluppo software,
+                web, UX/UI e progettazione tecnica. Approccio orientato alla
+                risoluzione di problemi complessi e all’ottimizzazione.
+            </p>
+        </div>
+
+        <div id="experience">
+            <h2>Esperienze lavorative</h2>
+
+            <article class="experience-item">
+                <h3>Studio tecnico di Architettura</h3>
+                <span>2022 – in corso</span>
+                <p>Progettazione 2D/3D, render, computi metrici, rilievi.</p>
+            </article>
+
+            <article class="experience-item">
+                <h3>Full Stack Developer</h3>
+                <span>2017 – 2022</span>
+                <p>Sviluppo web e software, front-end e back-end.</p>
+            </article>
+
+            <article class="experience-item">
+                <h3>Tecnico informatico</h3>
+                <span>2017 – 2022</span>
+                <p>Assemblaggio, manutenzione PC, stampa 3D, Arduino.</p>
+            </article>
+
+            <article class="experience-item">
+                <h3>Ristorazione – Regno Unito</h3>
+                <span>2014 – 2017</span>
+                <p>Crescita da lavapiatti a direttore di sala, contesto internazionale.</p>
+            </article>
+        </div>
+
+    </section>
+
+    <section class="section section-grid">
+
+        <div id="education">
+            <h2>Istruzione</h2>
+            <ul>
+                <li><strong>Laurea Triennale – Ingegneria Informatica</strong> (2022–2025)</li>
+                <li><strong>Studio Autonomo – Full Stack & IA</strong> (2025)</li>
+                <li><strong>Studio Autonomo – Data Analyst</strong> (2024–2025)</li>
+                <li><strong>Studio Autonomo – UI/UX Design</strong> (2024)</li>
+                <li><strong>Diploma Tecnico Geometra</strong> (2009–2014)</li>
+            </ul>
+        </div>
+
+        <div id="skills">
+            <h2>Competenze tecniche</h2>
+
+            <div class="skill-category">
+                <h3>Software & Programmazione</h3>
+                <div class="skills-slider">
+                    <div class="skills-track">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        <span>Python</span><span>C++</span><span>Unity</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>CAD & Design</h3>
+                <div class="skills-slider">
+                    <div class="skills-track">
+                        <span>AutoCAD</span><span>SketchUp</span>
+                        <span>Twinmotion</span><span>Blender</span><span>GIMP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact-highlight">
+        <h2>Contattami</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Messaggio" required></textarea>
+            <button type="submit">Invia messaggio</button>
+        </form>
+
+        <div class="contact-links">
+            <a href="mailto:alessiocuddretto@hotmail.com">Email</a>
+            <a href="https://github.com/cuddiale" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/alessiocuddretto95" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2026 Alessio Cuddretto
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
