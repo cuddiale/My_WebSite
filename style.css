@@ -1,27 +1,231 @@
-/* ROTAZIONE TESTO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+}
+
+.nav-button {
+  padding: 0.45rem 1.2rem;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
 #rotating-text {
-  display: inline-block;
   transition: opacity 0.5s ease;
 }
 
-/* SKILLS più lente */
-.skills-track {
-  animation: scroll-left 40s linear infinite;
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
 }
 
-/* CONTATTI EVIDENZIATI */
-.contact-highlight {
+.btn-primary {
+  background: #000;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  border: 1px solid #000;
+  color: #000;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.hero-image {
+  width: 280px;
+  height: 380px;
+  background: #eee;
+  border-radius: 12px;
+}
+
+/* SEZIONI */
+.section {
+  max-width: 1200px;
+  margin: auto;
   padding: 6rem 2rem;
-  background: #f5f5f5;
-  text-align: center;
 }
 
-.contact-highlight h2 {
+.section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* ESPERIENZE */
+.experience-item {
   margin-bottom: 2rem;
 }
 
-.contact-highlight .contact-form {
-  margin: 0 auto 2rem;
+.experience-item span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* ISTRUZIONE */
+.education-item {
+  margin-bottom: 2.5rem;
+}
+
+.education-skills {
+  margin-top: 1rem;
+  line-height: 1.9;
+}
+
+.education-skills span {
+  display: inline-block;
+  margin: 0.3rem 0.6rem 0.3rem 0;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* SKILLS */
+.skills-slider {
+  overflow: hidden;
+}
+
+.skills-track {
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+.skills-track span {
+  border: 1px solid #ddd;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* LINGUE */
+.language-item {
+  margin-bottom: 1.2rem;
+}
+
+.language-bar {
+  height: 6px;
+  background: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.level {
+  height: 100%;
+  background: #000;
+}
+
+/* CONTATTI */
+.contact-section {
+  padding: 6rem 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.9rem;
 }
 
 .contact-links {
@@ -34,4 +238,23 @@
   text-decoration: none;
   color: #000;
   font-weight: 500;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
 }
